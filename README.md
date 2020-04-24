@@ -5,3 +5,5 @@ This repo tries to reproduce an issue in Viewpager2 where adding removing fragme
 
 
 Run this app and use toogle button to add Green fragment then remove it and again add then scroll to green fragment.
+
+![Screenshot](Screenshot.png)
