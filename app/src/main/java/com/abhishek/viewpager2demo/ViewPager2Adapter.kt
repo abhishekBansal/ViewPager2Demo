@@ -20,6 +20,15 @@ class ViewPager2Adapter(activity: FragmentActivity) : FragmentStateAdapter(activ
         }
     }
 
+    override fun getItemId(position: Int): Long {
+        return fragmentList[position].ordinal.toLong()
+    }
+
+    override fun containsItem(itemId: Long): Boolean {
+        val fragment = FragmentName.values()[itemId.toInt()]
+        return fragmentList.contains(fragment)
+    }
+
     fun add(fragment: FragmentName) {
         fragmentList.add(fragment)
         notifyDataSetChanged()
