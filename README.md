@@ -14,7 +14,7 @@ override fun getItemId(position: Int): Long {
         return fragmentList.contains(fragment)
     }
 ```
-Adding these two in my current adapter fixes the problem
+Adding these two in my current adapter fixes the problem. [StackoverFlow post](https://stackoverflow.com/questions/61406176/viewpager2-not-able-to-dynamically-add-remove-fragment/61452721#61452721)
 
 --------------------------------------------------------
 
